@@ -1,0 +1,113 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome5",
+    "definitions": {
+        "Welcome5": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "first_name": {
+                    "type": "string"
+                },
+                "last_name": {
+                    "type": "string"
+                },
+                "birth_name": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "birth_date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "salutation": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "street_name": {
+                    "type": "string"
+                },
+                "house_number": {
+                    "type": "string"
+                },
+                "apartment_number": {
+                    "type": "integer"
+                },
+                "entry": {
+                    "type": "integer"
+                },
+                "zip": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "citizenship": {
+                    "type": "string"
+                },
+                "profession": {
+                    "type": "string"
+                },
+                "sector_employer": {
+                    "type": "string"
+                },
+                "employed_gte_a_year": {
+                    "type": "boolean"
+                },
+                "monthly_net_salary": {
+                    "type": "integer"
+                },
+                "lives_together": {
+                    "type": "boolean"
+                },
+                "privacy_accepted": {
+                    "type": "boolean"
+                },
+                "tnc_accepted": {
+                    "type": "boolean"
+                },
+                "telephone_number": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "loan_questionnaire_id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "salary_statement_files": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "id_document_files": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "is_main": {
+                    "type": "boolean"
+                },
+                "household_situation_id": {
+                    "type": "string",
+                    "format": "uuid"
+                }
+            },
+            "required": [
+                "id",
+                "is_main",
+                "loan_questionnaire_id"
+
+            ],
+            "title": "Welcome5"
+        }
+    }
+}
